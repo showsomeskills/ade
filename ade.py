@@ -7,6 +7,10 @@ import glob
 
 load_dotenv()
 
+# Healthcheck
+import healthcheck
+healthcheck.start()
+
 TOKEN = os.getenv('TOKEN')
 DEFAULT_PREFIX = os.getenv('PREFIX', '-')  # fallback to '.' if PREFIX not set
 
